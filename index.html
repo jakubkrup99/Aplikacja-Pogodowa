@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="main.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div id="cities-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" tabindex="0">&times;</span>
+        <ul class="saved-cities-ul"></ul>
+      </div>
+    </div>
+    <div id="weather-modal" class="modal">
+      
+      <div class="modal-content weather-content">
+        <span class="close close-weather" tabindex="0">&times;</span>
+      </div>
+
+    </div>
+    <div class="card" id="1" >
+      <menu class="menu">
+        <button class="btn-color-mode"><img src="images/moon.png" /></button>
+        <button class="btn-save"><img src="images/save.png" /></button>
+        <button class="btn-saved-list"><img src="/images/diskette.png"></button>
+        <button class="btn-days"></button>
+        <button class="btn-language">
+          <img src="images/world.png" />
+        </button>
+      </menu>
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button class="btn-gps"><img src="images/location.png" /></button>
+        <button class="btn-search"><img src="images/search.png" /></button>
+      </div>
+      <div class="error">
+        <p></p>
+      </div>
+      <div class="date">
+        <p></p>
+      </div>
+      <div class="date hour">
+        <p></p>
+      </div>
+      <div class="weather" tabindex="0">
+        <img src="images/rain.png" class="weather-icon" />
+        <h1 class="temp">C</h1>
+        <h2 class="city"></h2>
+        <p class="weather-description"></p>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity"></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind"></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
